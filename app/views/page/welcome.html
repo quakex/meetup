@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>meetup</title>
+
+  <!-- css -->
+  <link rel="stylesheet" type="text/css" href="css/common.css">
+  <link rel="stylesheet" type="text/css" href="css/index.css">
+
+  <!-- 导入js文件，图片自动缩放 -->
+  <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script src="js/jquery.anystretch.min.js"></script>
+
+</head>
+<body class="index">
+  <!-- 导航栏 -->
+  <div class="navbar clearfix">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        Meetup
+      </a>
+      <ul class="nav left">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">placeholder</a></li>
+      </ul>
+      <ul class="nav right">
+        <li><a href="#">login</a></li>
+        <li><a href="#">signup</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- end 导航栏 -->
+
+  <div class="home-banner" data-stretch="images/39.jpg"></div>
+
+<!-- footer -->
+  <div class="footer">
+    <div class="container">
+      footer
+    </div>
+  </div>
+
+<!-- 图片自动缩放 -->
+
+<script type="text/javascript">
+  $('.home-banner').anystretch();
+</script>
+
+</body>
+</html>
