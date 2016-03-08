@@ -1,14 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Meetup</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+  <meta charset="UTF-8">
+  <title>meetup</title>
+
+  <!-- css -->
+  <%= stylesheet_link_tag "application" %>
+  <!-- 导入js文件，图片自动缩放 -->
+
+  <%= javascript_include_tag "application" %>
 </head>
-<body>
+
+<body class="<%= params[:controller] + '-' + params[:action] %>">
+
+  <!-- 导航栏 -->
+  <div class="navbar clearfix">
+    <div class="container">
+      <a class="navbar-brand" href="/">
+        Meetup
+      </a>
+      <ul class="nav left">
+        <li><a href="./about.html">About</a></li>
+        <li><a href="#">placeholder</a></li>
+      </ul>
+      <ul class="nav right">
+        <li><%= link_to "About", "/about" %></li>
+
+        <li><a href="#">signup</a></li>
+      </ul>
+    </div>
+  </div>
+
 
 <%= yield %>
+
+
+<!-- footer -->
+  <div class="footer">
+    <div class="container">
+      footer
+    </div>
+  </div>
+
+<!-- 图片自动缩放 -->
+
+<script type="text/javascript">
+  $('.home-banner').anystretch();
+</script>
 
 </body>
 </html>

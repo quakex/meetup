@@ -1,0 +1,49 @@
+/*
+Error: Invalid CSS after "sans-serif": expected expression (e.g. 1px, bold), was ";"
+        on line 2 of common.css
+
+1: body {
+2:   font-family: sans-serif;
+3:   margin: 0;
+4:   font-size: 14px;
+5:   color: #666;
+6: }
+7: 
+
+Backtrace:
+common.css:2
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/scss/parser.rb:1179:in `expected'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/script/lexer.rb:227:in `expected!'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/script/parser.rb:702:in `assert_done'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/script/parser.rb:64:in `parse'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/script/parser.rb:223:in `parse'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/script.rb:27:in `parse'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:1145:in `parse_script'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:718:in `parse_property'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:689:in `parse_property_or_rule'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:655:in `parse_line'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:533:in `build_tree'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:552:in `block in append_children'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:551:in `each'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:551:in `append_children'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:542:in `block in build_tree'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:535:in `each'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:535:in `build_tree'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:552:in `block in append_children'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:551:in `each'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:551:in `append_children'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:406:in `_to_tree'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:378:in `_render_with_sourcemap'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/engine.rb:295:in `render_with_sourcemap'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:414:in `run'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/exec/sass_scss.rb:63:in `process_result'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/exec/base.rb:52:in `parse'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/lib/sass/exec/base.rb:19:in `parse!'
+/Users/quakex/.rvm/gems/ruby-2.2.2@global/gems/sass-3.4.21/bin/sass:13:in `<top (required)>'
+/Users/quakex/.rvm/gems/ruby-2.2.2/bin/sass:23:in `load'
+/Users/quakex/.rvm/gems/ruby-2.2.2/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"sans-serif\": expected expression (e.g. 1px, bold), was \";\"\A         on line 2 of common.css\A \A 1: body {\A 2:   font-family: sans-serif;\A 3:   margin: 0;\A 4:   font-size: 14px;\A 5:   color: #666;\A 6: }\A 7: "; }
