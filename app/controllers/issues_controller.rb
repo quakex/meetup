@@ -2,6 +2,7 @@ class IssuesController < ApplicationController
   def show
     # render plain: params[:id].inspect
     @issue = Issue.find(params[:id]);
+    @comments = @issue.comments
   end
 
   def destroy
