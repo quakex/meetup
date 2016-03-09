@@ -9,6 +9,7 @@
   <!-- 导入js文件，图片自动缩放 -->
 
   <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
 </head>
 
 <body class="<%= params[:controller] + '-' + params[:action] %>">
