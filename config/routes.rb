@@ -10,8 +10,12 @@ Rails.application.routes.draw do
 
   # issues
 
+  get 'issues/new' => 'issues#new'
+  get 'issues' => 'issues#index', :as => 'issues'
   get 'issues/:id' => 'issues#show', :as => "issue"
   delete 'issues/:id' => 'issues#destroy'
+  post 'issues' => 'issues#create'
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
