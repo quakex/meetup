@@ -2,6 +2,7 @@
   <div class="container">
     <%= @issue.title %>
     <%= link_to 'Destroy', issue_path(@issue), method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
+    <%= link_to 'edit', edit_issue_path(@issue), class: "btn btn-primary" %>
 
   </div>
 </div>
