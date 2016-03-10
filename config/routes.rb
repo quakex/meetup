@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
   # get 'issues/show'
 
   # The priority is based upon order of creation: first created -> highest priority.
@@ -7,6 +8,8 @@ Rails.application.routes.draw do
   # You can have the root of your site routed with "root"
   root 'page#welcome'
   get '/about' => 'page#about'
+  get 'signup' => 'users#signup', :as => 'signup'
+
 
   # issues
 
@@ -20,8 +23,11 @@ Rails.application.routes.draw do
 
   resources :issues
 
+  resources :users, only:[:create]
+
   # comments
   post '/issues/:issue_id/comments' => "comments#create"
+
 
 
 
