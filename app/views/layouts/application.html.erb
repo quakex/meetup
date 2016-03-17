@@ -7,7 +7,6 @@
   <!-- css -->
   <%= stylesheet_link_tag "application" %>
   <!-- 导入js文件，图片自动缩放 -->
-
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
@@ -25,9 +24,9 @@
         <li><a href="#">placeholder</a></li>
       </ul>
       <ul class="nav right">
-        <li><%= link_to "About", "/about" %></li>
+        <li><%= link_to "login", login_path %></li>
 
-        <li><%= link_to "signup",signup_path %></li>
+        <li><%= link_to "signup", signup_path %></li>
       </ul>
     </div>
   </div>
