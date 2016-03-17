@@ -13,6 +13,10 @@ class UsersController < ApplicationController
 
   end
 
+  def logout
+    session[:user_id] = nil
+    redirect_to :root
+  end
   def create_login_session
     user = User.find_by_name(params[:name])
     if user && user.authenticate(params[:password])
